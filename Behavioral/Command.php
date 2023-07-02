@@ -24,17 +24,17 @@ class Output
         return $this->body;
     }
 
-    public function enable()
+    public function enable():void
     {
         $this->isEnable = true;
     }
 
-    public function disable()
+    public function disable():void
     {
         $this->isEnable = false;
     }
 
-    public function write($str)
+    public function write($str):void
     {
         if ($this->isEnable) {
             $this->body = $str;
